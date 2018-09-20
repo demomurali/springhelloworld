@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
-@RestController
+
 public class GitdemoApplication {
 
 	public static void main(String[] args) {
@@ -19,11 +19,6 @@ public class GitdemoApplication {
 		SpringApplication.run(GitdemoApplication.class, args);
 	}
 
-	@RequestMapping("/hi")
-	public String hello(){
-		System.out.println("hello");
-		return "hello";
-	}
 	@Bean
 	public CommandLineRunner commandLineRunner(ApplicationContext ctx){
 		return (args) -> {
