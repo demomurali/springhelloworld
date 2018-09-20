@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class GitdemoApplication {
 
 	public static void main(String[] args) {
-		System.out.println("inside demo");
+		System.out.println("inside demo abc");
 		SpringApplication.run(GitdemoApplication.class, args);
 	}
 
